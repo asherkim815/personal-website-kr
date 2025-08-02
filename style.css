@@ -24,6 +24,17 @@ section {
   gap: 25px;
 }
 
+li {
+  line-height: 1.75;
+}
+
+span {
+  background-color: #262626;
+  color: white;
+  padding: 0 5px;
+  border-radius: 5px;
+}
+
 /* 특정 section에만 적용되는 css */
 #introduction {
   margin: 50px 25px;
@@ -39,10 +50,17 @@ section {
 
 #introduction img {
   width: 20px;
+  position: relative;
+  top: 3px;
 }
 
 #projects {
   margin: 0 25px 50px;
+}
+
+#projects strong {
+  font-weight: 400;
+  color: red;
 }
 
 #projects .project-card {
