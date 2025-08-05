@@ -15,6 +15,14 @@ body {
   justify-content: center;
 }
 
+main {
+  padding: 50px 0;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
 section {
   padding: 50px;
   background-color: white;
@@ -35,11 +43,19 @@ span {
   border-radius: 5px;
 }
 
-/* 특정 section에만 적용되는 css */
-#introduction {
-  margin: 50px 25px;
+img {
+  width: 100%;
+  border-radius: 10px;
 }
 
+strong {
+  font-weight: 400;
+  color: red;
+}
+
+/* 특정 section에만 적용되는 css */
+
+/* #introduction 섹션 */
 #introduction ul {
   margin-left: 30px;
 }
@@ -48,36 +64,24 @@ span {
   cursor: pointer;
 }
 
-#introduction img {
+#introduction .clipboard {
   width: 20px;
+  border-radius: 0;
   position: relative;
   top: 3px;
 }
 
-#projects {
-  margin: 0 25px 50px;
-}
-
-#projects strong {
-  font-weight: 400;
-  color: red;
-}
-
+/* #projects 섹션 */
 #projects .project-container {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 25px;
 }
 
 #projects .project-card {
   padding: 25px;
-  max-width: 600px;
+  /* max-width: 600px; */
   background-color: #262626;
-  border-radius: 10px;
-}
-
-#projects img {
-  width: 100%;
   border-radius: 10px;
 }
 
@@ -114,7 +118,19 @@ span {
   color: white;
 }
 
-@media (max-width: 600px) {
+/* #designs 섹션 */
+#designs .design-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+#designs img {
+  border: 3px solid black;
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
   section {
     padding: 25px;
   }
